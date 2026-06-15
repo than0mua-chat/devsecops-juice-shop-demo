@@ -96,7 +96,7 @@ jobs:
         with:
           name: DAST-ZAP-report
           path: zap_report.html
-        uses: zaproxy/action-baseline@v0.11.0
+      - uses: zaproxy/action-baseline@v0.11.0
         with:
           target: 'http://localhost:3000'
         continue-on-error: true
