@@ -3,7 +3,9 @@ name: Juice Shop DevSecOps Demo
 on:
   push:
     branches: [ "master", "main" ]
-
+permissions:
+  contents: read
+  issues: write     # Cho phép ZAP tự động tạo Issue báo lỗi
 jobs:
   # 1. Secret Scanning (Quét key/password)
   secret-scan:
